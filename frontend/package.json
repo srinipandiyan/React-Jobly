@@ -3,12 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "concurrently": "^8.2.2",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
+    "start-be": "cd ../backend && node server.js",
+    "start-fe": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
