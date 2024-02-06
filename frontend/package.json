@@ -1,12 +1,20 @@
 {
-  "name": "my-app-name",
+  "name": "react-jobly",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^1.6.7",
+    "bootstrap": "^4.4.1",
+    "buffer": "^6.0.3",
     "concurrently": "^8.2.2",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "react-scripts": "^5.0.1"
+    "crypto-browserify": "^3.12.0",
+    "jsonwebtoken": "^9.0.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.1",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
   },
   "scripts": {
     "start": "concurrently --kill-others \"npm run start-fe\" \"npm run start-be\"",
