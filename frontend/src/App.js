@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { decode } from "jsonwebtoken";
-//import { decode } from './common/decoder';
+//import { decode } from "jsonwebtoken";
+import { decode } from './common/decoder';
 import useLocalStorage from "./hooks/useLocalStorage";
 import Navbar from "./routes/Navbar";
 import Routes from "./routes/Routes";
