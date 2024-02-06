@@ -8,4 +8,4 @@ function decode (token) {
         return JSON.parse(jsonPayload);
 };
 
-export default { decode };
+module.exports = { decode };
